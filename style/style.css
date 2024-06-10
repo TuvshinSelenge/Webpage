@@ -1,0 +1,42 @@
+/* General dark mode styling for the entire page, enforced with !important */
+body {
+  background-color: #121212 !important; /* Dark grey background for the whole page */
+  color: #e0e0e0 !important; /* Light grey text for readability */
+  font-family: Arial, sans-serif; /* Standard font for consistency */
+}
+
+/* Style inputs with type="text", select elements, and textareas for Dark Mode */
+input[type=message], input[type=email], input[type=text], textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #555; /* Darker border for better visibility in dark mode */
+  background-color: #333; /* Dark background for inputs */
+  color: #ddd; /* Light text color for contrast */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a dark mode theme */
+button[type=submit] {
+  background-color: #666; /* Darker background color */
+  color: #fff; /* White text color for contrast */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a lighter dark color */
+button[type=submit]:hover {
+  background-color: #777;
+}
+
+/* Enhance dark mode visibility and hide Streamlit Branding */
+#MainMenu, footer, header {
+  visibility: hidden; /* Hide Streamlit branding elements */
+  background-color: #222 !important; /* Background color for the remaining visible UI elements */
+  color: #ccc !important; /* Text color for any visible text */
+}
